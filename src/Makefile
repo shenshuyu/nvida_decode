@@ -65,7 +65,6 @@ else
 obj := ${patsubst %.cpp, %.o, $(src)}	
 
 all:$(obj)
-	make -p obj
 	#@ar -r $(target) $(obj) 
 	#@ranlib $(target)
 	g++ -o test $(obj) -ldl -lpthread
